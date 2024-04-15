@@ -1,0 +1,7 @@
+*.db
+*.log
+/target
+/bin
+
+1.txt
+*.pub
