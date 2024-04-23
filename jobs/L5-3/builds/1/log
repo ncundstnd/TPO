@@ -1,0 +1,7 @@
+Started by user [8mha:////4AHlr5kEGN1MzqC0ZDcl7Ctmp2RwIlVAw04gb29haApWAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZ+/dLi1CL9vOTSvJTikrwUAPEWtpPEAAAA[0mIvan Shemken
+Running as SYSTEM
+Building on the built-in node in workspace /root/.jenkins/workspace/L5-3
+[L5-3] $ /bin/sh -xe /tmp/jenkins17596782635393634386.sh
++ echo Hello, user!
+Hello, user!
+Finished: SUCCESS
