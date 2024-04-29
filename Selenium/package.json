@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "test": " npx mocha ./src/index.js"
-  },
   "dependencies": {
     "chai": "^4.3.10",
     "selenium-webdriver": "^4.20.0",
