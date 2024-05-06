@@ -1,9 +1,8 @@
 {
   "scripts": {
-    "test9": "npx mocha ./index.js",
-    "test10": "npx mocha ./Lab10.js",
-    "test11": "npx mocha ./Lab11.js",
-    "test12": "npx mocha ./Lab12.js"
+    "testLab9": "npx mocha ./lab9/index.js",
+    "testLab10": "npx mocha ./lab10/tests/Lab10Tests.js",
+    "test11": "npx mocha ./Lab12.js"
   },
   "dependencies": {
     "chai": "^4.3.10",
