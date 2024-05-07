@@ -6,7 +6,7 @@ const delayTime = 2000;
 
 describe('SearchTest', function () {
 
-  this.timeout(60000); // Increase timeout if necessary
+  this.timeout(90000); // Increase timeout if necessary
 
   before(async function () {
     await GeneralElements.openThePage('https://soundcloud.com/discover');
@@ -14,7 +14,17 @@ describe('SearchTest', function () {
 
   //1
   it('Search a group by name', async function () {
-    await GeneralElements.inputSearchString('RHCP');
+    await setDelay(delayTime / 5);
+
+    groupName = "RHCP";
+
+    for (let index = 0; index < groupName.length; index++) {
+      await GeneralElements.inputSearchString(groupName[index]);
+      await setDelay(delayTime / 6);
+    }
+
+    await setDelay(delayTime / 2);
+
     await GeneralElements.submitSearch();
 
     await setDelay(delayTime);
@@ -25,19 +35,32 @@ describe('SearchTest', function () {
 
   //2
   it('Add album in user library', async function () {
-    let albumName = 'Californication';
+    let albumName = 'мои (твои) тёмные желания';
 
-    await GeneralElements.inputSearchString(albumName);
+    await setDelay(delayTime);
+
+    await GeneralElements.clearSearchString();
+
+    for (let index = 0; index < albumName.length; index++) {
+      await GeneralElements.inputSearchString(albumName[index]);
+      await setDelay(delayTime / 7);
+    }
+
+    await setDelay(delayTime);
+
     await GeneralElements.submitSearch();
+
+    await setDelay(delayTime);
+
     await SearchPage.findContent('albums');
 
     await setDelay(delayTime);
 
-    const albumInfoElement = await GeneralElements.findElement(`[aria-label="Playlist: Californication by Red Hot Chili Peppers"]`, 'css')
+    const albumInfoElement = await GeneralElements.findElement(`[aria-label="Playlist: мои (твои) тёмные желания by ooes"]`, 'css')
     const likeButton = await GeneralElements.findChildElement(albumInfoElement, '[aria-label="Like"]', 'css');
     await likeButton.click();
 
-    await setDelay(delayTime);
+    await setDelay(delayTime * 5);
 
     const library = await GeneralElements.findElement(`[data-menu-name="library"]`, 'css');
     await library.click();
@@ -50,7 +73,7 @@ describe('SearchTest', function () {
 
     await setDelay(delayTime);
 
-    let searchElement = await GeneralElements.findElement(`[aria-label="Californication"]`, 'css')
+    let searchElement = await GeneralElements.findElement(`[aria-label="мои (твои) тёмные желания"]`, 'css')
     confirmTest(searchElement, 'Album has been added to user library')
   });
 

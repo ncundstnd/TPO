@@ -10,6 +10,10 @@ class GeneralElements extends BasePage {
     return await driver.findElement(By.className('headerSearch__input')).sendKeys(searchString);
   }
 
+  async clearSearchString() {
+    return await driver.findElement(By.className('headerSearch__input')).clear();
+  }
+
   async submitSearch() {
     return await driver.findElement(By.className('headerSearch__submit')).click();
   }
