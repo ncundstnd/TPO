@@ -3,5 +3,9 @@
 /target
 /bin
 /Selenium/node_modules
+
+/lab11-12
+/Lab11-nm
+
 1.txt
 *.pub
