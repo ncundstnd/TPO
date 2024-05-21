@@ -4,7 +4,7 @@ const SearchPage = require('../pages/SearchPage');
 const { By } = require('selenium-webdriver')
 const Logger = require('../core/logger')
 
-const delayTime = 500;
+const delayTime = 1500;
 
 describe('Tests', function () {
   Logger.log('Test package started')
