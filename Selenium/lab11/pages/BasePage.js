@@ -1,5 +1,5 @@
 const { By } = require('selenium-webdriver')
-const driver = require('../driver/driver')
+const driver = require('../core/driver')
 
 class BasePage {
   constructor() {

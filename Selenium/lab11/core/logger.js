@@ -7,7 +7,7 @@ class Logger {
 
     // Логируем сообщение в файл
     try {
-      await fs.appendFile("C:\\Study\\ТПО\\Selenium\\lab11\\log.txt", logMessage); // Записываем сообщение в файл
+      await fs.appendFile("./lab11/logs/logs.log", logMessage); // Записываем сообщение в файл
       console.log("Сообщение успешно записано в файл.");
     } catch (error) {
       console.error("Ошибка при записи сообщения в файл:", error);

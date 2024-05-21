@@ -2,7 +2,7 @@ const { describe, it, after } = require('mocha');
 const GeneralElements = require('../pages/GeneralElements');
 const SearchPage = require('../pages/SearchPage');
 const { By } = require('selenium-webdriver')
-const Logger = require('../utils/logger')
+const Logger = require('../core/logger')
 
 const delayTime = 500;
 
