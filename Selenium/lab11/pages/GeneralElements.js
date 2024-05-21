@@ -1,4 +1,4 @@
-const BasePage = require('./Basepage');
+const BasePage = require('./BasePage');
 const { By } = require('selenium-webdriver');
 
 class GeneralElements extends BasePage {

@@ -1,5 +1,5 @@
 const { By, until } = require('selenium-webdriver');
-const BasePage = require('./Basepage');
+const BasePage = require('./BasePage');
 
 class HomePage extends BasePage {
   async navigateTo(menuName) {

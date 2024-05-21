@@ -1,5 +1,5 @@
 const { By, until } = require('selenium-webdriver');
-const BasePage = require('./Basepage');
+const BasePage = require('./BasePage');
 
 class SearchPage extends BasePage {
   async findContent(contentType) {
