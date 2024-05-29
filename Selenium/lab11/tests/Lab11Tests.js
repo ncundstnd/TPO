@@ -14,12 +14,15 @@ describe('Tests', function () {
   before(async function () {
     await GeneralElements.openThePage('https://soundcloud.com/discover');
   });
-
+  
   //1
   it('Search a group by name', async function () {
     await setDelay(delayTime / 5);
     Logger.log('Search a group by name')
 
+    let wer = await GeneralElements.findElement('id', 'onetrust-accept-btn-handler');
+    wer.click();
+    
     groupName = "RHCP";
 
     for (let index = 0; index < groupName.length; index++) {
