@@ -1,5 +1,4 @@
 *.db
-*.log
 /target
 /bin
 /Selenium/node_modules
