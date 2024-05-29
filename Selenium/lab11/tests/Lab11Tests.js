@@ -20,9 +20,9 @@ describe('Tests', function () {
     await setDelay(delayTime / 5);
     Logger.log('Search a group by name')
 
-    let wer = await GeneralElements.findElement('id', 'onetrust-accept-btn-handler');
-    wer.click();
-    
+    const cookie = await GeneralElements.findElement(`onetrust-accept-btn-handler`, 'id')
+    await cookie.click();
+
     groupName = "RHCP";
 
     for (let index = 0; index < groupName.length; index++) {
