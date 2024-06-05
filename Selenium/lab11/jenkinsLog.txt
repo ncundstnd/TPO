@@ -1,0 +1,161 @@
+Started by user [8mha:////4E8LVHqSbnPGH0m/w4KSTvBrAOlKb9Zty16mLADMlZHvAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CL9xJTczDwA4LbuW8AAAAA=[0mIvan Shemken
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Lab10
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\Lab10\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/ncundstnd/TPO_1 # timeout=10
+Fetching upstream changes from https://github.com/ncundstnd/TPO_1
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.42.0.windows.2'
+ > git.exe fetch --tags --force --progress -- https://github.com/ncundstnd/TPO_1 +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 0abd3c0cd1d222febb56e10eeb107a7d87e71b2c (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 0abd3c0cd1d222febb56e10eeb107a7d87e71b2c # timeout=10
+Commit message: "Update README.md"
+ > git.exe rev-list --no-walk 0abd3c0cd1d222febb56e10eeb107a7d87e71b2c # timeout=10
+[Lab10] $ cmd /c call C:\Windows\TEMP\jenkins556167675650362317.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Lab10>cd Selenium 
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Lab10\Selenium>echo "After cd Selenium" 
+"After cd Selenium"
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Lab10\Selenium>npm run Test11 
+
+> Test11
+> npx mocha ./lab11/tests/Lab11Tests.js
+
+
+
+  Tests
+Сообщение успешно записано в файл.
+Сообщение успешно записано в файл.
+    ✔ Search a group by name (4091ms)
+Сообщение успешно записано в файл.
+Сообщение успешно записано в файл.
+    1) Add album in user library
+Сообщение успешно записано в файл.
+    2) Following singer
+Сообщение успешно записано в файл.
+    3) Create listen queue
+Сообщение успешно записано в файл.
+    4) Add additional gmail
+Сообщение успешно записано в файл.
+    5) Delete track from soundcloud
+Сообщение успешно записано в файл.
+Сообщение успешно записано в файл.
+    ✔ Add comment to the song (18475ms)
+Сообщение успешно записано в файл.
+    6) Clear listening history
+Сообщение успешно записано в файл.
+    7) Add song to playlist
+Сообщение успешно записано в файл.
+Сообщение успешно записано в файл.
+    8) Logout
+
+
+  2 passing (2m)
+  8 failing
+
+  1) Tests
+       Add album in user library:
+     NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":".g-tabs-item.networkTabs__albums"}
+  (Session info: chrome=125.0.6422.142)
+      at Object.throwDecodedError (node_modules\selenium-webdriver\lib\error.js:521:15)
+      at parseHttpResponse (node_modules\selenium-webdriver\lib\http.js:514:13)
+      at Executor.execute (node_modules\selenium-webdriver\lib\http.js:446:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async thenableWebDriverProxy.execute (node_modules\selenium-webdriver\lib\webdriver.js:740:17)
+      at async GeneralElements.findElement (lab11\pages\BasePage.js:15:14)
+      at async Context.<anonymous> (lab11\tests\Lab11Tests.js:80:27)
+
+  2) Tests
+       Following singer:
+     NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":".g-tabs-item.networkTabs__following"}
+  (Session info: chrome=125.0.6422.142)
+      at Object.throwDecodedError (node_modules\selenium-webdriver\lib\error.js:521:15)
+      at parseHttpResponse (node_modules\selenium-webdriver\lib\http.js:514:13)
+      at Executor.execute (node_modules\selenium-webdriver\lib\http.js:446:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async thenableWebDriverProxy.execute (node_modules\selenium-webdriver\lib\webdriver.js:740:17)
+      at async GeneralElements.findElement (lab11\pages\BasePage.js:15:14)
+      at async Context.<anonymous> (lab11\tests\Lab11Tests.js:126:27)
+
+  3) Tests
+       Create listen queue:
+     NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":".g-tabs-item.networkTabs__sets"}
+  (Session info: chrome=125.0.6422.142)
+      at Object.throwDecodedError (node_modules\selenium-webdriver\lib\error.js:521:15)
+      at parseHttpResponse (node_modules\selenium-webdriver\lib\http.js:514:13)
+      at Executor.execute (node_modules\selenium-webdriver\lib\http.js:446:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async thenableWebDriverProxy.execute (node_modules\selenium-webdriver\lib\webdriver.js:740:17)
+      at async GeneralElements.findElement (lab11\pages\BasePage.js:15:14)
+      at async Context.<anonymous> (lab11\tests\Lab11Tests.js:147:30)
+
+  4) Tests
+       Add additional gmail:
+     NoSuchElementError: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/ul[4]/li[2]/a"}
+  (Session info: chrome=125.0.6422.142)
+      at Object.throwDecodedError (node_modules\selenium-webdriver\lib\error.js:521:15)
+      at parseHttpResponse (node_modules\selenium-webdriver\lib\http.js:514:13)
+      at Executor.execute (node_modules\selenium-webdriver\lib\http.js:446:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async thenableWebDriverProxy.execute (node_modules\selenium-webdriver\lib\webdriver.js:740:17)
+      at async GeneralElements.findElement (lab11\pages\BasePage.js:23:14)
+      at async Context.<anonymous> (lab11\tests\Lab11Tests.js:180:20)
+
+  5) Tests
+       Delete track from soundcloud:
+     ElementNotInteractableError: element not interactable
+  (Session info: chrome=125.0.6422.142)
+      at Object.throwDecodedError (node_modules\selenium-webdriver\lib\error.js:521:15)
+      at parseHttpResponse (node_modules\selenium-webdriver\lib\http.js:514:13)
+      at Executor.execute (node_modules\selenium-webdriver\lib\http.js:446:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async thenableWebDriverProxy.execute (node_modules\selenium-webdriver\lib\webdriver.js:740:17)
+      at async Context.<anonymous> (lab11\tests\Lab11Tests.js:223:5)
+
+  6) Tests
+       Clear listening history:
+     NoSuchElementError: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="content"]/div/div/div[2]/div/article[4]/a/span"}
+  (Session info: chrome=125.0.6422.142)
+      at Object.throwDecodedError (node_modules\selenium-webdriver\lib\error.js:521:15)
+      at parseHttpResponse (node_modules\selenium-webdriver\lib\http.js:514:13)
+      at Executor.execute (node_modules\selenium-webdriver\lib\http.js:446:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async thenableWebDriverProxy.execute (node_modules\selenium-webdriver\lib\webdriver.js:740:17)
+      at async GeneralElements.findElement (lab11\pages\BasePage.js:23:14)
+      at async Context.<anonymous> (lab11\tests\Lab11Tests.js:287:21)
+
+  7) Tests
+       Add song to playlist:
+     NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":".g-tabs-item.networkTabs__sets"}
+  (Session info: chrome=125.0.6422.142)
+      at Object.throwDecodedError (node_modules\selenium-webdriver\lib\error.js:521:15)
+      at parseHttpResponse (node_modules\selenium-webdriver\lib\http.js:514:13)
+      at Executor.execute (node_modules\selenium-webdriver\lib\http.js:446:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async thenableWebDriverProxy.execute (node_modules\selenium-webdriver\lib\webdriver.js:740:17)
+      at async GeneralElements.findElement (lab11\pages\BasePage.js:15:14)
+      at async Context.<anonymous> (lab11\tests\Lab11Tests.js:353:30)
+
+  8) Tests
+       Logout:
+     NoSuchElementError: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[4]/section/div/div[1]/div/div[1]/button[1]"}
+  (Session info: chrome=125.0.6422.142)
+      at Object.throwDecodedError (node_modules\selenium-webdriver\lib\error.js:521:15)
+      at parseHttpResponse (node_modules\selenium-webdriver\lib\http.js:514:13)
+      at Executor.execute (node_modules\selenium-webdriver\lib\http.js:446:28)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async thenableWebDriverProxy.execute (node_modules\selenium-webdriver\lib\webdriver.js:740:17)
+      at async GeneralElements.findElement (lab11\pages\BasePage.js:23:14)
+      at async Context.<anonymous> (lab11\tests\Lab11Tests.js:379:25)
+
+
+
+Build step 'Выполнить команду Windows' marked build as failure
+Finished: FAILURE
